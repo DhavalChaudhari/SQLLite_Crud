@@ -27,7 +27,7 @@ class _AddContactState extends State<AddContact> {
                   (val!.length == 0 ? 'This Field is Required.' : null),
             ),
             SizedBox(
-              height: 20,
+              height: 65,
             ),
             TextFormField(
               decoration: InputDecoration(
@@ -37,13 +37,16 @@ class _AddContactState extends State<AddContact> {
                   ? 'Atleast 10 Characters are required.'
                   : null),
             ),
-            ElevatedButton(
-                // style: ElevatedButton.styleFrom(
-                //     primary: Color.fromARGB(0, 102, 153, 204)),
-                onPressed: () {
-                  _onsubmit();
-                },
-                child: Text('Add'))
+            Center(
+              child: ElevatedButton(
+
+                  // style: ElevatedButton.styleFrom(
+                  //     primary: Color.fromARGB(0, 102, 153, 204)),
+                  onPressed: () {
+                    _onsubmit();
+                  },
+                  child: Text('Add')),
+            )
           ],
         ),
       ),
